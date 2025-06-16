@@ -45,3 +45,10 @@ span {
   color: #ff5722;
   font-weight: bold;
 }
+button {
+  margin-right: 10px;
+  padding: 15px 10px;
+  font-size: 16px;
+  background: #000;
+  color: #fff;
+}
