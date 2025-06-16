@@ -4,7 +4,7 @@ import './App.css';
 
 // Your first custom component
 function Welcome(){
-   return <h1>Welcome Afzaal! 🎉 This is your first React component.</h1>;
+   return <h1>Welcome from Office!</h1>;
 }
 
 // Header Component
