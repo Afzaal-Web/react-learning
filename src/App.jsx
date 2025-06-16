@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState} from "react";
 import './App.css';
 
 
 // Your first custom component
 function Welcome(){
-   return <h1>Welcome from Office!</h1>;
+   return <h1>Welcome from Home</h1>;
 }
 
 // Header Component
@@ -14,35 +14,62 @@ const Header = () => {
 
 // Footer Component
 function Footer(){
-  return <small>© 2025 React & Vite. All rights reserved.</small>;
+  return <small>© 2025 home. All rights reserved.</small>;
 }
 
-function MainContent() {
+// Props are like function arguments — they let you send data into a component.
+// Think of components as reusable blocks, and props let you customize what each block displays.
+
+function Message(props) {
   return (
-    <main>
-      <p>This is the updated version from the <strong>office-work</strong> branch.</p>
-      <ul>
-        <li>✔ Changed header</li>
-        <li>✔ Added list</li>
-        <li>✔ New layout</li>
-      </ul>
-    </main>
+    <>
+      <p>{props.text}</p>
+      <div>
+        {props.children}
+      </div>
+    </>
+  );
+}
+
+// function Comment(props) {
+//   return (
+//     <div>
+//       <p>{props.text}</p>
+//       <div>
+//         {props.children}
+//       </div>
+//     </div>
+//   );
+// }
+
+// New Component: counter using  State
+function Counter() {
+  const [count, setcount] = useState(1);
+  return(
+<div style={{margin: '20px 0'}}>
+  <h3>Counter Example</h3>
+  <p>Count: {count}</p>
+  {/* Step 2: Update state using setCount */}
+  <button onClick={() => setcount(count - 1)}>➖ Decrease</button>
+  <button onClick={() => setcount(1)}>🔁 Reset</button>
+  <button onClick={() => setcount(count + 1)}>➕ Increase</button>
+  
+</div>
   );
 }
 
 
 
-function App() {
-  return (
-    <div className="app-container">
+// Main App component
+function App(){
+  return(
+    <div>
       <Header />
-
       <Welcome />
       <Message text ="Hello just learnt Props"><span>afzaal</span></Message>
       {/* <Comment text ="Hello just learnt Props"><span>afaal</span></Comment> */}
       {/* ✅ Add the new Counter component */}
       <Counter />
-
       <Footer />
     </div>
   );
