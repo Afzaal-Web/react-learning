@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from "react";
 import './App.css';
 
 
@@ -42,6 +42,23 @@ function Comment(props) {
   );
 }
 
+// New Component: counter using  State
+function Counter() {
+  const [count, setcount] = useState(0);
+  return(
+<div style={{margin: '20px 0'}}>
+  <h3>Counter Example</h3>
+  <p>Count: {count}</p>
+  {/* Step 2: Update state using setCount */}
+  <button onClick={() => setcount(count - 1)}>➖ Decrease</button>
+  <button onClick={() => setcount(0)}>🔁 Reset</button>
+  <button onClick={() => setcount(count + 1)}>➕ Increase</button>
+  
+</div>
+  );
+}
+
+
 
 // Main App component
 function App(){
@@ -51,6 +68,8 @@ function App(){
       <Welcome />
       <Message text ="Hello just learnt Props"><span>afaal</span></Message>
       <Comment text ="Hello just learnt Props"><span>afaal</span></Comment>
+      {/* ✅ Add the new Counter component */}
+      <Counter />
       <Footer />
     </div>
   );
