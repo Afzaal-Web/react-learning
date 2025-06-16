@@ -36,7 +36,13 @@ function App() {
   return (
     <div className="app-container">
       <Header />
-      <MainContent />
+
+      <Welcome />
+      <Message text ="Hello just learnt Props"><span>afzaal</span></Message>
+      {/* <Comment text ="Hello just learnt Props"><span>afaal</span></Comment> */}
+      {/* ✅ Add the new Counter component */}
+      <Counter />
+
       <Footer />
     </div>
   );
