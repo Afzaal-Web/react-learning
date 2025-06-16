@@ -30,9 +30,7 @@ function MainContent() {
   );
 }
 
-function Footer() {
-  return <footer><small>Updated at Office 🏢</small></footer>;
-}
+
 
 function App() {
   return (
