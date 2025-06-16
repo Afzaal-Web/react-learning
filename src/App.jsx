@@ -44,14 +44,14 @@ function Comment(props) {
 
 // New Component: counter using  State
 function Counter() {
-  const [count, setcount] = useState(0);
+  const [count, setcount] = useState(1);
   return(
 <div style={{margin: '20px 0'}}>
   <h3>Counter Example</h3>
   <p>Count: {count}</p>
   {/* Step 2: Update state using setCount */}
   <button onClick={() => setcount(count - 1)}>➖ Decrease</button>
-  <button onClick={() => setcount(0)}>🔁 Reset</button>
+  <button onClick={() => setcount(1)}>🔁 Reset</button>
   <button onClick={() => setcount(count + 1)}>➕ Increase</button>
   
 </div>
