@@ -1,8 +1,20 @@
 import React from "react";
 import './App.css';
 
-function Header() {
-  return <header><h1>🚀 React App (Office Version)</h1></header>;
+
+// Your first custom component
+function Welcome(){
+   return <h1>Welcome from Office!</h1>;
+}
+
+// Header Component
+const Header = () => {
+  return <h2>🌟 My First React App 🌟</h2>;
+}
+
+// Footer Component
+function Footer(){
+  return <small>© 2025 React & Vite. All rights reserved.</small>;
 }
 
 function MainContent() {
