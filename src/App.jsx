@@ -14,7 +14,7 @@ const Header = () => {
 
 // Footer Component
 function Footer(){
-  return <small>© 2025 Afzaal. All rights reserved.</small>;
+  return <small>© 2025 home. All rights reserved.</small>;
 }
 
 // Props are like function arguments — they let you send data into a component.
@@ -31,16 +31,16 @@ function Message(props) {
   );
 }
 
-function Comment(props) {
-  return (
-    <div>
-      <p>{props.text}</p>
-      <div>
-        {props.children}
-      </div>
-    </div>
-  );
-}
+// function Comment(props) {
+//   return (
+//     <div>
+//       <p>{props.text}</p>
+//       <div>
+//         {props.children}
+//       </div>
+//     </div>
+//   );
+// }
 
 // New Component: counter using  State
 function Counter() {
@@ -67,7 +67,7 @@ function App(){
       <Header />
       <Welcome />
       <Message text ="Hello just learnt Props"><span>afaal</span></Message>
-      <Comment text ="Hello just learnt Props"><span>afaal</span></Comment>
+      {/* <Comment text ="Hello just learnt Props"><span>afaal</span></Comment> */}
       {/* ✅ Add the new Counter component */}
       <Counter />
       <Footer />
