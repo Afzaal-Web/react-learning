@@ -66,7 +66,7 @@ function App(){
     <div>
       <Header />
       <Welcome />
-      <Message text ="Hello just learnt Props"><span>afaal</span></Message>
+      <Message text ="Hello just learnt Props"><span>afzaal</span></Message>
       {/* <Comment text ="Hello just learnt Props"><span>afaal</span></Comment> */}
       {/* ✅ Add the new Counter component */}
       <Counter />
