@@ -14,7 +14,7 @@ const Header = () => {
 
 // Footer Component
 function Footer(){
-  return <small>© 2025 React & Vite. All rights reserved.</small>;
+  return <small>© 2025 home. All rights reserved.</small>;
 }
 
 // Props are like function arguments — they let you send data into a component.
